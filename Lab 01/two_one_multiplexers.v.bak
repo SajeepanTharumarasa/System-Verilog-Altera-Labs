@@ -1,0 +1,7 @@
+module two_one_multiplexers(X,Y,S,M);
+input X,Y,Z;
+output M;
+wire M;
+assign M = (∼S & X) | (S & Y);
+
+endmodule

@@ -1,0 +1,25 @@
+|three_one_multiplexers
+s0 => s0.IN1
+s1 => s1.IN1
+u => u.IN1
+v => v.IN1
+w => w.IN1
+m <= two_one_multiplexers:M2.m
+
+
+|three_one_multiplexers|two_one_multiplexers:M1
+s => m.IN0
+s => m.IN0
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+x => m.IN1
+y => m.IN1
+
+
+|three_one_multiplexers|two_one_multiplexers:M2
+s => m.IN0
+s => m.IN0
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+x => m.IN1
+y => m.IN1
+
+

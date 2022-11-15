@@ -1,0 +1,8 @@
+|two_one_multiplexers
+s => m.IN0
+s => m.IN0
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+x => m.IN1
+y => m.IN1
+
+

@@ -1,0 +1,557 @@
+|part4
+CLOCK_50 => CLOCK_50.IN1
+HEX7[6] <= <GND>
+HEX7[5] <= <GND>
+HEX7[4] <= <GND>
+HEX7[3] <= <GND>
+HEX7[2] <= <GND>
+HEX7[1] <= <GND>
+HEX7[0] <= <GND>
+HEX6[6] <= <GND>
+HEX6[5] <= <GND>
+HEX6[4] <= <GND>
+HEX6[3] <= <GND>
+HEX6[2] <= <GND>
+HEX6[1] <= <GND>
+HEX6[0] <= <GND>
+HEX5[6] <= <GND>
+HEX5[5] <= <GND>
+HEX5[4] <= <GND>
+HEX5[3] <= <GND>
+HEX5[2] <= <GND>
+HEX5[1] <= <GND>
+HEX5[0] <= <GND>
+HEX4[6] <= <GND>
+HEX4[5] <= <GND>
+HEX4[4] <= <GND>
+HEX4[3] <= <GND>
+HEX4[2] <= <GND>
+HEX4[1] <= <GND>
+HEX4[0] <= <GND>
+HEX3[6] <= <GND>
+HEX3[5] <= <GND>
+HEX3[4] <= <GND>
+HEX3[3] <= <GND>
+HEX3[2] <= <GND>
+HEX3[1] <= <GND>
+HEX3[0] <= <GND>
+HEX2[6] <= <GND>
+HEX2[5] <= <GND>
+HEX2[4] <= <GND>
+HEX2[3] <= <GND>
+HEX2[2] <= <GND>
+HEX2[1] <= <GND>
+HEX2[0] <= <GND>
+HEX1[6] <= <GND>
+HEX1[5] <= <GND>
+HEX1[4] <= <GND>
+HEX1[3] <= <GND>
+HEX1[2] <= <GND>
+HEX1[1] <= <GND>
+HEX1[0] <= <GND>
+HEX0[6] <= b2d_ssd:H0.port1
+HEX0[5] <= b2d_ssd:H0.port1
+HEX0[4] <= b2d_ssd:H0.port1
+HEX0[3] <= b2d_ssd:H0.port1
+HEX0[2] <= b2d_ssd:H0.port1
+HEX0[1] <= b2d_ssd:H0.port1
+HEX0[0] <= b2d_ssd:H0.port1
+LEDR[0] <= t_flipflop:T0.port3
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+LEDR[10] <= <GND>
+LEDR[11] <= <GND>
+LEDR[12] <= <GND>
+LEDR[13] <= <GND>
+LEDR[14] <= <GND>
+LEDR[15] <= <GND>
+KEY[0] => ~NO_FANOUT~
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+
+
+|part4|counter_26bit:C0
+En => En.IN1
+Clk => Clk.IN26
+Clr => Clr.IN26
+Q[0] <= t_flipflop:T0.port3
+Q[1] <= t_flipflop:T1.port3
+Q[2] <= t_flipflop:T2.port3
+Q[3] <= t_flipflop:T3.port3
+Q[4] <= t_flipflop:T4.port3
+Q[5] <= t_flipflop:T5.port3
+Q[6] <= t_flipflop:T6.port3
+Q[7] <= t_flipflop:T7.port3
+Q[8] <= t_flipflop:T8.port3
+Q[9] <= t_flipflop:T9.port3
+Q[10] <= t_flipflop:T10.port3
+Q[11] <= t_flipflop:T11.port3
+Q[12] <= t_flipflop:T12.port3
+Q[13] <= t_flipflop:T13.port3
+Q[14] <= t_flipflop:T14.port3
+Q[15] <= t_flipflop:T15.port3
+Q[16] <= t_flipflop:T16.port3
+Q[17] <= t_flipflop:T17.port3
+Q[18] <= t_flipflop:T18.port3
+Q[19] <= t_flipflop:T19.port3
+Q[20] <= t_flipflop:T20.port3
+Q[21] <= t_flipflop:T21.port3
+Q[22] <= t_flipflop:T22.port3
+Q[23] <= t_flipflop:T23.port3
+Q[24] <= t_flipflop:T24.port3
+Q[25] <= t_flipflop:T25.port3
+
+
+|part4|counter_26bit:C0|t_flipflop:T0
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T1
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T2
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T3
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T4
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T5
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T6
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T7
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T8
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T9
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T10
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T11
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T12
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T13
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T14
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T15
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T16
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T17
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T18
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T19
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T20
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T21
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T22
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T23
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T24
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:C0|t_flipflop:T25
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY
+En => En.IN1
+Clk => Clk.IN26
+Clr => Clr.IN26
+Q[0] <= t_flipflop:T0.port3
+Q[1] <= t_flipflop:T1.port3
+Q[2] <= t_flipflop:T2.port3
+Q[3] <= t_flipflop:T3.port3
+Q[4] <= t_flipflop:T4.port3
+Q[5] <= t_flipflop:T5.port3
+Q[6] <= t_flipflop:T6.port3
+Q[7] <= t_flipflop:T7.port3
+Q[8] <= t_flipflop:T8.port3
+Q[9] <= t_flipflop:T9.port3
+Q[10] <= t_flipflop:T10.port3
+Q[11] <= t_flipflop:T11.port3
+Q[12] <= t_flipflop:T12.port3
+Q[13] <= t_flipflop:T13.port3
+Q[14] <= t_flipflop:T14.port3
+Q[15] <= t_flipflop:T15.port3
+Q[16] <= t_flipflop:T16.port3
+Q[17] <= t_flipflop:T17.port3
+Q[18] <= t_flipflop:T18.port3
+Q[19] <= t_flipflop:T19.port3
+Q[20] <= t_flipflop:T20.port3
+Q[21] <= t_flipflop:T21.port3
+Q[22] <= t_flipflop:T22.port3
+Q[23] <= t_flipflop:T23.port3
+Q[24] <= t_flipflop:T24.port3
+Q[25] <= t_flipflop:T25.port3
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T0
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T1
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T2
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T3
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T4
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T5
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T6
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T7
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T8
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T9
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T10
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T11
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T12
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T13
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T14
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T15
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T16
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T17
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T18
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T19
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T20
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T21
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T22
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T23
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T24
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|counter_26bit:DISPLAY|t_flipflop:T25
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|t_flipflop:T0
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|b2d_ssd:H0
+X[0] => Mux0.IN19
+X[0] => Mux1.IN19
+X[0] => Mux2.IN19
+X[0] => Mux3.IN19
+X[0] => Mux4.IN19
+X[0] => Mux5.IN19
+X[0] => Mux6.IN19
+X[0] => Mux7.IN19
+X[1] => Mux0.IN18
+X[1] => Mux1.IN18
+X[1] => Mux2.IN18
+X[1] => Mux3.IN18
+X[1] => Mux4.IN18
+X[1] => Mux5.IN18
+X[1] => Mux6.IN18
+X[1] => Mux7.IN18
+X[2] => Mux0.IN17
+X[2] => Mux1.IN17
+X[2] => Mux2.IN17
+X[2] => Mux3.IN17
+X[2] => Mux4.IN17
+X[2] => Mux5.IN17
+X[2] => Mux6.IN17
+X[2] => Mux7.IN17
+X[3] => Mux0.IN16
+X[3] => Mux1.IN16
+X[3] => Mux2.IN16
+X[3] => Mux3.IN16
+X[3] => Mux4.IN16
+X[3] => Mux5.IN16
+X[3] => Mux6.IN16
+X[3] => Mux7.IN16
+SSD[6] <= SSD[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SSD[5] <= SSD[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SSD[4] <= SSD[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SSD[3] <= SSD[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SSD[2] <= SSD[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SSD[1] <= SSD[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SSD[0] <= SSD[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

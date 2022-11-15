@@ -1,0 +1,134 @@
+|part2
+En => En.IN1
+Clk => Clk.IN16
+Clr => Clr.IN16
+Q[0] <= tff_reg:T0.port3
+Q[1] <= tff_reg:T1.port3
+Q[2] <= tff_reg:T2.port3
+Q[3] <= tff_reg:T3.port3
+Q[4] <= tff_reg:T4.port3
+Q[5] <= tff_reg:T5.port3
+Q[6] <= tff_reg:T6.port3
+Q[7] <= tff_reg:T7.port3
+Q[8] <= tff_reg:T8.port3
+Q[9] <= tff_reg:T9.port3
+Q[10] <= tff_reg:T10.port3
+Q[11] <= tff_reg:T11.port3
+Q[12] <= tff_reg:T12.port3
+Q[13] <= tff_reg:T13.port3
+Q[14] <= tff_reg:T14.port3
+Q[15] <= tff_reg:T15.port3
+
+
+|part2|tff_reg:T0
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|tff_reg:T1
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|tff_reg:T2
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|tff_reg:T3
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|tff_reg:T4
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|tff_reg:T5
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|tff_reg:T6
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|tff_reg:T7
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|tff_reg:T8
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|tff_reg:T9
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|tff_reg:T10
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|tff_reg:T11
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|tff_reg:T12
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|tff_reg:T13
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|tff_reg:T14
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|tff_reg:T15
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
